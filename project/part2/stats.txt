@@ -1,0 +1,84 @@
+LINEAR REGRESSION 80s SEASONS
+
+mean absolute error: 2.380384465076227
+Mean squared error:  8.576959153029906
+Root mean squared error:  2.9286445931573715
+
+print(regressor2.intercept_)
+print(regressor2.coef_)
+[5.01024194]
+[[-0.06998417]]
+
+LINEAR REGRESSION 90S SEASONS
+
+print(regressor9.intercept_)
+print(regressor9.coef_)
+[5.41529651]
+[[-0.0688935]]
+
+mean absolute error: 2.541771752645473
+Mean squared error:  9.317509597035274
+Root mean squared error:  3.0524595979366005
+
+
+LINEAR REGRESSION 2 STATS
+
+mean absolute error: 2.657311077038437
+Mean squared error:  9.87903482784244
+Root mean squared error:  3.1430931942661897
+
+print(regressor2.intercept_)
+print(regressor2.coef_)
+
+[5.51887754]
+[[-0.06241486]]
+
+THE 80S LR *************************************************************
+PICK VS WS
+
+print(regressor2.intercept_)
+print(regressor2.coef_)
+[5.05473768]
+[[-0.0716609]]
+
+mean absolute error: 2.640300320050043
+Mean squared error:  9.773189662509973
+Root mean squared error:  3.1262101117023424
+
+
+THE 90S LR **********************************************************
+
+
+CART MODEL PREDICTING YRS IN LEAGUE
+PREDICTORS DRAFT SEASON, PICK, WS
+
+ACCURACY = .6477
+
+                precision    recall  f1-score   support
+
+   0-3 Seasons       0.74      0.62      0.68       390
+   3-6 Seasons       0.63      0.96      0.76       491
+6 - 10 Seasons       0.56      0.62      0.59       438
+ 10-22 Seasons       0.83      0.28      0.42       356
+
+      accuracy                           0.65      1675
+     macro avg       0.69      0.62      0.61      1675
+  weighted avg       0.68      0.65      0.62      1675
+
+
+CART 2 MODEL PREDICTING YRS IN LEAGUE
+PREDICTORS DRAFT PICK VS YRS
+
+ACCURACY = .549
+
+                precision    recall  f1-score   support
+
+   0-3 Seasons       0.64      0.75      0.69       390
+   3-6 Seasons       0.62      0.72      0.67       491
+6 - 10 Seasons       0.53      0.29      0.38       438
+ 10-22 Seasons       0.37      0.42      0.39       356
+
+      accuracy                           0.55      1675
+     macro avg       0.54      0.54      0.53      1675
+  weighted avg       0.55      0.55      0.54      1675
+

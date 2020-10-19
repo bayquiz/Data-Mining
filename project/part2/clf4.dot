@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Winshares <= 0.808\nentropy = 1.584\nsamples = 1639\nvalue = [537, 571, 531]\nclass = 4-9 Seasons"] ;
+1 [label="Winshares <= 0.113\nentropy = 1.082\nsamples = 654\nvalue = [435, 23, 196]\nclass = 0-4 Seasons"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="entropy = 0.743\nsamples = 345\nvalue = [281, 3, 61]\nclass = 0-4 Seasons"] ;
+1 -> 5 ;
+6 [label="draft pick <= 25.5\nentropy = 1.278\nsamples = 309\nvalue = [154, 20, 135]\nclass = 0-4 Seasons"] ;
+1 -> 6 ;
+7 [label="entropy = 1.222\nsamples = 124\nvalue = [41, 8, 75]\nclass = 9-22 Seasons"] ;
+6 -> 7 ;
+8 [label="entropy = 1.217\nsamples = 185\nvalue = [113, 12, 60]\nclass = 0-4 Seasons"] ;
+6 -> 8 ;
+2 [label="Winshares <= 2.629\nentropy = 1.339\nsamples = 985\nvalue = [102, 548, 335]\nclass = 4-9 Seasons"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 1.477\nsamples = 470\nvalue = [77, 185, 208]\nclass = 9-22 Seasons"] ;
+2 -> 3 ;
+4 [label="entropy = 1.066\nsamples = 515\nvalue = [25, 363, 127]\nclass = 4-9 Seasons"] ;
+2 -> 4 ;
+}

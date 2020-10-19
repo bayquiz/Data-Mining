@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Winshares <= 5.15\ngini = 0.749\nsamples = 3296\nvalue = [751, 837, 814, 894]\nclass = 36 to 60 Pick"] ;
+1 [label="Winshares <= 1.35\ngini = 0.742\nsamples = 2343\nvalue = [418, 642, 688, 595]\nclass = 21 to 36 Pick"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="Winshares <= -1.25\ngini = 0.73\nsamples = 970\nvalue = [149, 266, 335, 220]\nclass = 21 to 36 Pick"] ;
+1 -> 5 ;
+9 [label="gini = 0.245\nsamples = 7\nvalue = [6, 0, 0, 1]\nclass = 0 to 9 Pick"] ;
+5 -> 9 ;
+10 [label="Winshares <= -0.35\ngini = 0.729\nsamples = 963\nvalue = [143, 266, 335, 219]\nclass = 21 to 36 Pick"] ;
+5 -> 10 ;
+11 [label="gini = 0.735\nsamples = 98\nvalue = [18, 33, 20, 27]\nclass = 9 to 21 Pick"] ;
+10 -> 11 ;
+12 [label="gini = 0.725\nsamples = 865\nvalue = [125, 233, 315, 192]\nclass = 21 to 36 Pick"] ;
+10 -> 12 ;
+6 [label="gini = 0.746\nsamples = 1373\nvalue = [269, 376, 353, 375]\nclass = 9 to 21 Pick"] ;
+1 -> 6 ;
+2 [label="Winshares <= 10.35\ngini = 0.72\nsamples = 953\nvalue = [333, 195, 126, 299]\nclass = 0 to 9 Pick"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Winshares <= 7.65\ngini = 0.732\nsamples = 816\nvalue = [253, 186, 121, 256]\nclass = 36 to 60 Pick"] ;
+2 -> 3 ;
+13 [label="gini = 0.735\nsamples = 523\nvalue = [144, 121, 85, 173]\nclass = 36 to 60 Pick"] ;
+3 -> 13 ;
+14 [label="gini = 0.717\nsamples = 293\nvalue = [109, 65, 36, 83]\nclass = 0 to 9 Pick"] ;
+3 -> 14 ;
+4 [label="Winshares <= 13.1\ngini = 0.555\nsamples = 137\nvalue = [80, 9, 5, 43]\nclass = 0 to 9 Pick"] ;
+2 -> 4 ;
+7 [label="gini = 0.614\nsamples = 99\nvalue = [48, 9, 5, 37]\nclass = 0 to 9 Pick"] ;
+4 -> 7 ;
+8 [label="gini = 0.266\nsamples = 38\nvalue = [32, 0, 0, 6]\nclass = 0 to 9 Pick"] ;
+4 -> 8 ;
+}

@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Winshares <= 2.25\ngini = 0.747\nsamples = 11110\nvalue = [2358, 3128, 3009, 2615]\nclass = 7-11 Seasons"] ;
+1 [label="Winshares <= 0.55\ngini = 0.697\nsamples = 4082\nvalue = [1706, 877, 396, 1103]\nclass = 0-7 Seasons"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="draft pick <= 13.5\ngini = 0.623\nsamples = 2096\nvalue = [1140, 340, 146, 470]\nclass = 0-7 Seasons"] ;
+1 -> 5 ;
+7 [label="gini = 0.735\nsamples = 444\nvalue = [130, 101, 72, 141]\nclass = 14-21 Seasons"] ;
+5 -> 7 ;
+8 [label="gini = 0.564\nsamples = 1652\nvalue = [1010, 239, 74, 329]\nclass = 0-7 Seasons"] ;
+5 -> 8 ;
+6 [label="gini = 0.728\nsamples = 1986\nvalue = [566, 537, 250, 633]\nclass = 14-21 Seasons"] ;
+1 -> 6 ;
+2 [label="Winshares <= 6.65\ngini = 0.704\nsamples = 7028\nvalue = [652, 2251, 2613, 1512]\nclass = 11 - 14 Seasons"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.716\nsamples = 3631\nvalue = [367, 1285, 954, 1025]\nclass = 7-11 Seasons"] ;
+2 -> 3 ;
+4 [label="gini = 0.653\nsamples = 3397\nvalue = [285, 966, 1659, 487]\nclass = 11 - 14 Seasons"] ;
+2 -> 4 ;
+}
